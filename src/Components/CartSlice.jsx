@@ -1,7 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 const initialState = {
     cartItems: [],
   };
+
+// This slice manages the cart state
 const CartSlice = createSlice({
     name: 'cart',
     initialState,
