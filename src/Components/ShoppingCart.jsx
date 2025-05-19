@@ -6,7 +6,7 @@ const ShoppingCart = () => {
   
   const dispatch = useDispatch(); // Use useDispatch to get the dispatch function
   const cartItems = useSelector(state => state.cart.cartItems); // Use useSelector to get the cart items from the Redux store
-  const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0); // Calculate the total amount
 
   const handleRemoveItem = itemId => {
     dispatch(removeItemFromCart(itemId));
