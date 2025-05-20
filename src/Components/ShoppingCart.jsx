@@ -23,7 +23,8 @@ const ShoppingCart = () => {
   const handleDecreaseQuantity = itemId => {
     dispatch(decreaseItemQuantity(itemId));
   };
-// dispatch is used to send actions to the Redux store, which will update the state accordingly.
+// dispatch is used to send actions to the Redux store, which will update the state accordingly
+// useSelector is used to access the current state of the cart from the Redux store
   return (
     <>
     <div className="shopping-cart">
