@@ -23,7 +23,7 @@ const ShoppingCart = () => {
   const handleDecreaseQuantity = itemId => {
     dispatch(decreaseItemQuantity(itemId));
   };
-
+// dispatch is used to send actions to the Redux store, which will update the state accordingly.
   return (
     <>
     <div className="shopping-cart">
