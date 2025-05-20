@@ -11,15 +11,15 @@ const ShoppingCart = () => {
   const handleRemoveItem = itemId => {
     dispatch(removeItemFromCart(itemId));
   };
-
+// Function to handle clearing the cart
   const handleClearCart = () => {
     dispatch(clearCart());
   };
-
+// Function to handle increasing item quantity
   const handleIncreaseQuantity = itemId => {
     dispatch(increaseItemQuantity(itemId));
   };
-
+// Function to handle decreasing item quantity
   const handleDecreaseQuantity = itemId => {
     dispatch(decreaseItemQuantity(itemId));
   };
