@@ -25,6 +25,7 @@ const ShoppingCart = () => {
   };
 // dispatch is used to send actions to the Redux store, which will update the state accordingly
 // useSelector is used to access the current state of the cart from the Redux store
+// cartItems is an array of items in the shopping cart, each with properties like id, name, price, and quantity
   return (
     <>
     <div className="shopping-cart">
