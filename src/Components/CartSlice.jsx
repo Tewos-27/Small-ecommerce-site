@@ -9,6 +9,7 @@ const CartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
+      // Actions to manipulate the cart state
         addItemToCart(state, action) {
             const existingItem = state.cartItems.find(item => item.id === action.payload.id);
             if (existingItem) {
@@ -17,6 +18,8 @@ const CartSlice = createSlice({
               state.cartItems.push({ ...action.payload, quantity: 1 });
             }
           },
+      // Actions to remove an item from the cart, clear the cart, and adjust item quantities
+      
           removeItemFromCart(state, action) {
             state.cartItems = state.cartItems.filter(item => item.id !== action.payload);
           },
