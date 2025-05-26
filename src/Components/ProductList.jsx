@@ -4,6 +4,8 @@ import { addItemToCart } from './CartSlice';
 import './ProductList.css'; // Import CSS file for component-specific styles
 
 const ProductList = () => {
+  // This component displays a list of products and allows users to add them to the cart
+  // It uses Redux for state management and maintains a local state to track disabled products
   const dispatch = useDispatch();
   const [disabledProducts, setDisabledProducts] = useState([]); // State to store disabled products
 
