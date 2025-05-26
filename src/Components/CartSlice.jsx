@@ -26,12 +26,14 @@ const CartSlice = createSlice({
           clearCart(state) {
             state.cartItems = [];
           },
+          // Action to increase item quantity
           increaseItemQuantity(state, action) {
             const itemToIncrease = state.cartItems.find(item => item.id === action.payload);
             if (itemToIncrease) {
               itemToIncrease.quantity += 1;
             }
           },
+          // Action to decrease item quantity, ensuring it doesn't go below 1
           decreaseItemQuantity(state, action) {
             const itemToDecrease = state.cartItems.find(item => item.id === action.payload);
             if (itemToDecrease && itemToDecrease.quantity > 1) {
