@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// This file defines a Redux slice for managing the shopping cart state in an e-commerce application.
 const initialState = {
     cartItems: [],
   };
