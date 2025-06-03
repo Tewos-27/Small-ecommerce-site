@@ -8,7 +8,8 @@ const ProductList = () => {
   // It uses Redux for state management and maintains a local state to track disabled products
   const dispatch = useDispatch();
   const [disabledProducts, setDisabledProducts] = useState([]); // State to store disabled products
-
+// The disabledProducts state is an array that keeps track of products that have been added to the cart
+// The useDispatch hook is used to dispatch actions to the Redux store
   const products = [
     { id: 1, name: 'Product A', price: 60 },
     { id: 2, name: 'Product B', price: 75 },
