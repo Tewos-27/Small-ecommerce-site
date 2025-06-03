@@ -14,7 +14,7 @@ const ProductList = () => {
     { id: 2, name: 'Product B', price: 75 },
     { id: 3, name: 'Product C', price: 30 },
   ];
-
+  
   const handleAddToCart = product => {
     dispatch(addItemToCart(product));
     setDisabledProducts([...disabledProducts, product.id]); // Mark the product as disabled
