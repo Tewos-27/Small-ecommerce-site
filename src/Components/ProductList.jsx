@@ -16,6 +16,8 @@ const ProductList = () => {
     { id: 3, name: 'Product C', price: 30 },
   ];
   
+  // Function to handle adding a product to the cart
+  // This function dispatches the addItemToCart action with the product as an argument
   const handleAddToCart = product => {
     dispatch(addItemToCart(product));
     setDisabledProducts([...disabledProducts, product.id]); // Mark the product as disabled
