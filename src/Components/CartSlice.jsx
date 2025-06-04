@@ -29,6 +29,8 @@ const CartSlice = createSlice({
             state.cartItems = [];
           },
           // Action to increase item quantity
+          // This action finds the item in the cart and increases its quantity by 1
+          // If the item is not found, it does nothing
           increaseItemQuantity(state, action) {
             const itemToIncrease = state.cartItems.find(item => item.id === action.payload);
             if (itemToIncrease) {
