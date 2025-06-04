@@ -25,6 +25,8 @@ const CartSlice = createSlice({
           removeItemFromCart(state, action) {
             state.cartItems = state.cartItems.filter(item => item.id !== action.payload);
           },
+          // Action to clear the cart
+          // This action resets the cartItems array to an empty array
           clearCart(state) {
             state.cartItems = [];
           },
