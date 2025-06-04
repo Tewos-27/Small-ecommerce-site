@@ -19,6 +19,8 @@ const ProductList = () => {
   // Function to handle adding a product to the cart
   // This function dispatches the addItemToCart action with the product as an argument
   const handleAddToCart = product => {
+    // Check if the product is already disabled
+    // If it is, we do not allow adding it to the cart again
     dispatch(addItemToCart(product));
     setDisabledProducts([...disabledProducts, product.id]); // Mark the product as disabled
   };
